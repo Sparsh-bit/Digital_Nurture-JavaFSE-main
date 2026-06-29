@@ -1,0 +1,14 @@
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Button styles */
+.primary-btn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

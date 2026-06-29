@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working with Forms</title>
+    <style>
+        .error { color: red; font-size: 0.9em; display: none; }
+        .form-box { max-width: 300px; padding: 20px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h3>Sign up</h3>
+        <form id="signupForm">
+            <input type="text" name="userName" placeholder="Name"><br>
+            <span id="nameErr" class="error">Name is required</span><br>
+            
+            <input type="email" name="userEmail" placeholder="Email"><br>
+            <span id="emailErr" class="error">Invalid email</span><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="successMsg" style="color:green;"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

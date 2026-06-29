@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11: Cards and Media Objects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h3>Exercise 11.1: Profile Card</h3>
+        <div class="card" style="width: 18rem;">
+            <!-- Placeholder image using unsplash -->
+            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" class="card-img-top" alt="Profile Image">
+            <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text">Software Developer specializing in web technologies and Bootstrap layout design.</p>
+                <a href="#" class="btn btn-primary">View Profile</a>
+            </div>
+        </div>
+
+        <h3 class="mt-5">Exercise 11.2: Media Object Layout</h3>
+        <!-- Bootstrap 5 dropped the .media class in favor of flexbox utilities -->
+        <div class="d-flex align-items-start bg-light p-3 border">
+            <img src="https://via.placeholder.com/64" class="me-3 rounded-circle" alt="Generic placeholder image">
+            <div>
+                <h5 class="mt-0">Media heading</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

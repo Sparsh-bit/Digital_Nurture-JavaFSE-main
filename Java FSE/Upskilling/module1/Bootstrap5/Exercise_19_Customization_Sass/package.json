@@ -1,0 +1,13 @@
+{
+  "name": "sass-customization",
+  "version": "1.0.0",
+  "scripts": {
+    "build-css": "sass custom.scss custom.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}

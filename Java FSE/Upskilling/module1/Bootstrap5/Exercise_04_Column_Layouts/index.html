@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4: Column Layouts and Grid Classes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar { background-color: #d1ecf1; padding: 20px; min-height: 200px; }
+        .content { background-color: #f8d7da; padding: 20px; min-height: 200px; }
+        .four-col { background-color: #d4edda; border: 1px solid #c3e6cb; padding: 15px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h3>Exercise 4.1: Two-Column Layout</h3>
+        <div class="row mb-5">
+            <div class="col-md-3 sidebar">
+                <h5>Sidebar (col-md-3)</h5>
+                <p>Navigation links here.</p>
+            </div>
+            <div class="col-md-9 content">
+                <h5>Content Area (col-md-9)</h5>
+                <p>Main content goes here. It takes up the remaining 9 columns on medium screens and above.</p>
+            </div>
+        </div>
+
+        <h3>Exercise 4.2: Four-Column Layout</h3>
+        <div class="row">
+            <div class="col-sm-3"><div class="four-col">Col 1 (col-sm-3)</div></div>
+            <div class="col-sm-3"><div class="four-col">Col 2 (col-sm-3)</div></div>
+            <div class="col-sm-3"><div class="four-col">Col 3 (col-sm-3)</div></div>
+            <div class="col-sm-3"><div class="four-col">Col 4 (col-sm-3)</div></div>
+        </div>
+    </div>
+</body>
+</html>

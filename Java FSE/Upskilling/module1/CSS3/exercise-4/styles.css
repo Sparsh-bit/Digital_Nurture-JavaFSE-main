@@ -1,0 +1,28 @@
+/* Background image with fallback color */
+body {
+    background-color: #f0f8ff; /* AliceBlue fallback */
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    font-family: Arial, sans-serif;
+}
+
+/* Gradient background */
+.gradient-header {
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    padding: 40px;
+    text-align: center;
+}
+
+/* Hex and RGBA colors */
+.gradient-header h1 {
+    color: #ffffff; /* Hex */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* RGBA for shadow opacity */
+}
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    color: #333333;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+}

@@ -1,0 +1,21 @@
+/* =========================================
+   Local Community Event Portal Stylesheet
+   ========================================= */
+
+/* Style for main CTA button */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Banner container styling */
+.event-banner {
+    background-color: #e9ecef;
+    padding: 40px;
+    text-align: center;
+    margin: 20px;
+}

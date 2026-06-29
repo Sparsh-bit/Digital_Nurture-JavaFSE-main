@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools Debugging</title>
+    <!-- Intentionally linking a broken CSS file name for the network tab exercise -->
+    <link rel="stylesheet" href="broken-styles.css">
+    <style>
+        .buggy-box {
+            width: 120%; /* Intentionally causing horizontal scroll */
+            background-color: #ffcccc;
+            padding: 50px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="buggy-box">
+        <h1>Help! I'm breaking the layout!</h1>
+        <p>Open your DevTools (F12 or Right Click -> Inspect) to fix this page.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging Practice</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        /* Intentionally hiding the main content to force the user to inspect it */
+        #secret-content { display: none; }
+        .box { background: lightblue; padding: 20px; border: 1px solid blue; }
+    </style>
+</head>
+<body>
+    <h1>Chrome DevTools Practice</h1>
+    <p>Open DevTools (F12) to figure out what's going wrong here.</p>
+
+    <div id="secret-content" class="box">
+        <h2>You found me!</h2>
+        <p>You successfully edited the CSS in the Elements tab to remove `display: none`.</p>
+    </div>
+
+    <button onclick="calculateTotal()">Calculate Event Total</button>
+
+    <script>
+        function calculateTotal() {
+            let basePrice = 20;
+            let tax = "5"; // intentional bug: string instead of int
+            
+            // Log to console for debugging
+            console.log("Calculating total...");
+            console.log("Base Price:", basePrice, type(basePrice));
+            console.log("Tax:", tax, type(tax));
+            
+            // This will concatenate instead of add (205 instead of 25)
+            let total = basePrice + tax; 
+            
+            alert("The total is: $" + total);
+        }
+
+        // Helper function for the console log
+        function type(val) { return typeof val; }
+    </script>
+</body>
+</html>

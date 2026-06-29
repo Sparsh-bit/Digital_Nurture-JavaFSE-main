@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 14: Display and Visibility</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar { background-color: #e9ecef; min-height: 80vh; }
+        .main-content { padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar: Hidden on mobile (d-none), visible on tablet and up (d-md-block) -->
+            <div class="col-md-3 col-lg-2 sidebar d-none d-md-block p-3 border-end">
+                <h5>Responsive Sidebar</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-9 col-lg-10 main-content">
+                <h3>Exercise 14.1: Display Utilities</h3>
+                
+                <div class="alert alert-info d-block d-md-none">
+                    <strong>Mobile View:</strong> The sidebar is currently hidden (`d-none`). Resize screen to tablet to see it!
+                </div>
+
+                <div class="p-3 mb-2 bg-success text-white d-none d-lg-flex justify-content-between align-items-center">
+                    <span>This banner is ONLY visible on Large (Desktop) screens (d-none d-lg-flex).</span>
+                    <button class="btn btn-light btn-sm">Action</button>
+                </div>
+                
+                <p>Content goes here. Try resizing the browser window to see elements appear and disappear.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

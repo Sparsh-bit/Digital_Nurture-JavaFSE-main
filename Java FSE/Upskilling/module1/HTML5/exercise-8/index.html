@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Preferences</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; }
+        .card { padding: 20px; border: 1px solid #ccc; max-width: 400px; border-radius: 8px; }
+        button { margin-top: 10px; padding: 8px 12px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Event Preferences</h2>
+        <p>Select your favorite type of event. We'll remember it next time you visit!</p>
+        
+        <select id="eventPref">
+            <option value="none">-- Select Preference --</option>
+            <option value="sports">Sports & Outdoors</option>
+            <option value="arts">Arts & Culture</option>
+            <option value="food">Food & Drink</option>
+        </select>
+        
+        <br><br>
+        <button onclick="savePref()" style="background: #007bff; color: white; border: none;">Save Preference</button>
+        <button onclick="clearPref()" style="background: #dc3545; color: white; border: none;">Clear Preferences</button>
+        
+        <p id="status" style="color: green; font-weight: bold;"></p>
+    </div>
+
+    <script>
+        // Check for saved preference on load
+        window.onload = function() {
+            const saved = localStorage.getItem('favoriteEvent');
+            if (saved) {
+                document.getElementById('eventPref').value = saved;
+                document.getElementById('status').innerText = "Loaded your saved preference!";
+            }
+        }
+
+        function savePref() {
+            const val = document.getElementById('eventPref').value;
+            if (val !== 'none') {
+                localStorage.setItem('favoriteEvent', val);
+                // Also storing in session storage just for the sake of the exercise
+                sessionStorage.setItem('activeSessionTheme', val);
+                document.getElementById('status').innerText = "Preference saved successfully!";
+            }
+        }
+
+        function clearPref() {
+            localStorage.removeItem('favoriteEvent');
+            sessionStorage.clear();
+            document.getElementById('eventPref').value = 'none';
+            document.getElementById('status').innerText = "Preferences cleared.";
+        }
+    </script>
+</body>
+</html>

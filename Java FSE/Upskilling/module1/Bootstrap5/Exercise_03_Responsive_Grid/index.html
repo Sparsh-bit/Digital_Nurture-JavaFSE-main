@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3: Fundamentals of Responsive Grid Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .col-box {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Responsive Grid</h2>
+        <!-- 3 columns stacking vertically on mobile (col-12), two-per-row on tablets (col-md-6), three-per-row on desktops (col-lg-4) -->
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-box">Column 1</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-box">Column 2</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-box">Column 3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
