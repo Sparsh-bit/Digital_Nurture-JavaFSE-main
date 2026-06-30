@@ -1,0 +1,7 @@
+server:
+  port: 8082
+
+spring:
+  security:
+    jwt:
+      secret: VmVyeVNlY3JldEtleUZvckpXVFNpZ25hdHVyZUdlbmVyYXRpb25BbmRWYWxpZGF0aW9uMTIzNDU=
