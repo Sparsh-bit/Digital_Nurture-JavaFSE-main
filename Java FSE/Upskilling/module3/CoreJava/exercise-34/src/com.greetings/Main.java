@@ -1,1 +1,0 @@
-package com.greetings;\nimport com.utils.Utils;\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(Utils.getMsg());\n    }\n}

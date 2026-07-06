@@ -1,1 +1,0 @@
-module com.greetings {\n    requires com.utils;\n}

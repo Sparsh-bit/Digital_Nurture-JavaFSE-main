@@ -1,1 +1,0 @@
-package com.utils;\npublic class Utils {\n    public static String getMsg() { return "Module says Hello!"; }\n}
